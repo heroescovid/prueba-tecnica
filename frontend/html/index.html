@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
-    <title>API</title>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head runat = "server">
+<meta http-equiv = "Content-Type" content="text/html; charset=utf-8"/>
+<meta name = "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous"/>
+<link href = "..//css/index.css" rel = "stylesheet"/>
+<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin = "anonymous"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin = "anonymous"></script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin = "anonymous"></script>
+<title>App</title>
 </head>
 <body>
-    
-</body>
-</html>
+    <form id = "form1" runat = "server">
+    <div class="container">
+          <div class="row">
+              <div class = "col-6" id = "Izquierda">
+                  <center>
+                       <img src = "..//imagenes/logotipo.jpg" width = "250px" class = "text-center" id = "imgen"/>
+                  </center>
+              </div>
+              <div class = "col-6" id = "Derecha">
+                <center>
+                    <h3 class = "font-weight-light">AVP SUPORT</h3> <br />
+                </center>  
+                  <table class = "table">
+                      <tr>
+                          <th class = "font-weight-light">Username :</th>
+                          <th>
+                              <asp:TextBox ID = "txtusername" CssClass="form-control" runat = "server"></asp:TextBox></th>
+                      </tr>
+                      <tr>
+                          <th class = "font-weight-light">Password :</th>
+                          <th>
+                              <asp:TextBox ID = "txtllave" CssClass = "form-control" TextMode = "Password" runat = "server"></asp:TextBox></th>
+                      </tr>
+                      <tr>
+                          <th>
+                              <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="alert alert-primary" /></th>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+    </div>
+    </form>
